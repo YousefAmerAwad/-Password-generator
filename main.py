@@ -23,16 +23,16 @@ while(n==1):
         print('Please enter an ineger number')
 
 
-random.shuffle(lowers)
-random.shuffle(uppers)
-random.shuffle(digits)
-random.shuffle(symbols)
+random.shuffle(lowers)  #shuffle the list 'lowers'
+random.shuffle(uppers)  #shuffle the list 'uppers'
+random.shuffle(digits)  #shuffle the list 'digits'
+random.shuffle(symbols) #shuffle the list 'symbols'
 
-n = int((30/100) * number_of_characters)        
-m = number_of_characters - 3 * n
+n = int((30/100) * number_of_characters)    #30% of characters
+m = number_of_characters - 3 * n            #10% of characters
 
-password = lowers[:n] + uppers[:n] + digits[:n] + symbols[:m]
-random.shuffle(password)
-password = ''.join(password)
-print(password)
+password = lowers[:n] + uppers[:n] + digits[:n] + symbols[:m]   #create a list containing all password characters but it's arranged 
+random.shuffle(password)  #shuffle it
+password = ''.join(password)  #convert this list to one string
+print(password) #print the password
 
