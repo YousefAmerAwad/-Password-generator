@@ -2,7 +2,7 @@
 Build a python strong password generator
 
 ## Characteristics of the generated passwords:
-- At least 9 characters
+- At least 6 characters
 - A mixture of uppercase and lowercase letters, numbers and special characters
 
 ## Percentage of each group of characters
